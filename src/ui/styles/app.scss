@@ -1,3 +1,80 @@
+@import 'loading.scss';
+
 h1 {
   color: #444;
+}
+
+input {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  background-color: lightgreen;
+  border: 1px solid green;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.app {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#repo-list {
+  display: inline;
+}
+
+.error {
+  border-color:rgb(209, 213, 218);
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px;
+  box-sizing:border-box;
+  color: darkred;
+  background-color: lightcoral;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.repo {
+  border-color:rgb(209, 213, 218);
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px;
+  color:rgb(36, 41, 46);
+  display:inline-block;
+  font-size:14px;
+  height:115px;
+  line-height:21px;
+  margin-bottom:16px;
+  padding:16px;
+  text-align:left;
+  width:359px;
+  word-wrap:break-word;
+  vertical-align: top;
+}
+
+.repo a {
+  color: #0366d6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.repo p {
+  text-overflow: hidden;
+  overflow: hidden;
+  height: 18px;
+}
+
+.circle {
+  background-color: #f1e05a;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  display: inline-block;
 }

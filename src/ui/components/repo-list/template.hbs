@@ -1,0 +1,40 @@
+<div id="repo-list">
+    {{#if @username}}
+        <button onclick={{action searchRepo}}>Search</button>
+    {{else}}
+        <p>Please enter a username</p>
+    {{/if}}
+
+    {{#if error}}
+        <div class="error">
+            {{error}}
+        </div>
+    {{/if}}
+
+    {{#if isLoading}}
+        <br/>
+        <b>Loading...</b>
+        <div id="loadingBox">
+            <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+            </div>
+        </div>
+    {{/if}}
+
+    <hr/>
+
+    {{#unless error}}
+        {{#each repos key="@key" as |val|}}
+            <div class="repo">
+                <a target="_blank" href="https://github.com/{{@username}}/{{val.name}}">{{val.name}}</a>
+                <p>{{val.description}}</p>
+                <p><div class="circle"></div> {{val.language}}</p>
+            </div>
+        {{/each}}
+    {{/unless}}
+</div>

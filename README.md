@@ -1,7 +1,8 @@
 # github-app
 
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
+This is a sample app that uses [glimmer.js](https://glimmerjs.com/) to load github repos for a given github username
+
+Try is out [here](https://mvlandys.github.io/glimmer-github-repos/)
 
 ## Prerequisites
 
